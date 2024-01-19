@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <div class="searchBox">
+            <i class='bx bx-map'></i>
+            <input type="text" placeholder="Enter Your City">
+            <button class="bx bx-search-alt-2"></button>
+        </div>
+
+        <div class="weatherBox">
+            <div class="Box">
+                <div class="infoWeather">
+                    <div class="Weather">
+                        <img src="images/sun.png">
+                        <p class="temperature">0<span>°C</span></p>
+                        <p class="description">Sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weatherDetails">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="infoHumidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="infoWind">
+                        <span>0Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="notFound">
+            <div class="box">
+                <img src="images/no-results.png">
+                <p>Oops! Location not Found</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
